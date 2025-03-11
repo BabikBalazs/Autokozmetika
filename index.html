@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babik Balázs Autókozmetika</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+      .dropdown {
+    position: absolute;
+    top: 60px; /* Gombok lejjebb helyezése */
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Közök a gombok között */
+}
+
+.dropdown-button,
+.login-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+        .dropdown-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dropdown-button, .login-button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4caf50, #81c784);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .feature-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        #cta {
+            text-align: center;
+            padding: 20px 0;
+            background: #4caf50;
+            color: white;
+        }
+
+        #cta a {
+            display: inline-block;
+            background: #388e3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Üdvözöllek Babik Balázs Autókozmetika weboldalán!</h1>
+        <p>Professzionális autóápolás és kozmetikai szolgáltatások</p>
+    </div>
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropdown-button">Menü</button>
+            <div class="dropdown-content">
+                <a href="giftcard.html">Ajándékkártya</a>
+                <a href="sms.html">Foglalási Értesítés SMS-ben</a>
+                <a href="time.html">Időpontfoglalás</a>
+                <a href="video.html">Videók :)</a>
+                <a href="specialoffers.html">Különleges Ajánlatok Vállalkozások Számára</a>
+                <a href="dynamic_pricing.html">Dinamikus Árkalkulátor</a>
+                <a href="husegprogram.html">Hüségprogram</a>
+                <a href="feedback.html">Vélemények</a>
+                <a href="ar.html">Árak</a>
+            </div>
+        </div>
+        <button class="login-button" onclick="window.location.href='Bejelentkezes.html';">Bejelentkezés</button>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="car_cosmetics.html">Bemutatkozás</a>
+        <a href="services.html">Szolgáltatások</a>
+        <a href="work.html">Korábbi munkák</a>
+        <a href="contact.html">Kapcsolat</a>
+        <a href="galeria.html">Galéria</a>
+    </div>
+</nav>
+
+<section id="hero">
+    <div class="container">
+        <h2 style="color: green;">Hozd ki autódból a legtöbbet!</h2>
+        <p style="color: green;">Ragyogás, precizitás, profizmus - minden egy helyen.</p>
+    </div>
+</section>
+
+<section id="features">
+    <div class="container">
+        <h2>Miért válassz engem?</h2>
+        <div class="feature-item">
+            <img src="./fejlett.png" alt="Modern technológia">
+            <h3>Modern technológia</h3>
+            <p>Csúcsminőségű eszközökkel dolgozok a legjobb eredményekért.</p>
+        </div>
+        <div class="feature-item">
+            <img src="./szakember.jpg" alt="Tapasztalt szakemberek">
+            <h3>Tapasztalat</h3>
+            <p>Több éves tapasztalattal randelkezem.</p>
+        </div>
+        <div class="feature-item">
+            <img src="Névtelen terv.png" alt="Elégedett ügyfelek">
+            <h3>Elégedett ügyfelek</h3>
+            <p>Ügyfeleim visszajelzései a minőségi szolgáltatásaimat tükrözik.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cta">
+    <div class="container">
+        <h2>Készen állsz a változásra?</h2>
+        <p>Lépj velem kapcsolatba még ma, és újítsd meg autód megjelenését!</p>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdBqtFdmtKWbBGfmnLffbspGjfKPLpBvRMPszKhZTrdVFtBlDqlTDZFGmFZPkKcjnJpPJLQ">Időpontfoglalás</a>
+    </div>
+</section>
+</body>
+</html>
